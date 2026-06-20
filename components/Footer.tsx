@@ -27,10 +27,10 @@ export default function Footer() {
       <footer className="relative overflow-hidden bg-[#1a1a1a]" aria-label="Footer">
         {/* Background image with overlay */}
         <div
-          className="absolute inset-0 opacity-35"
+          className="absolute inset-0 opacity-50"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80')",
+              "url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
