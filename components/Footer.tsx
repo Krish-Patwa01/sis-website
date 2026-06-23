@@ -14,7 +14,7 @@ export default function Footer() {
               </h2>
             </div>
             <a
-              href="#contact"
+              href="/#contact"
               className="flex-shrink-0 bg-white px-8 py-4 font-display font-bold text-electric transition-all hover:bg-slate-100"
             >
               Let's Work Together →
@@ -123,16 +123,16 @@ export default function Footer() {
                 </h3>
                 <ul className="mt-6 space-y-2.5">
                   {[
-                    "GRC & Compliance",
-                    "Offensive Security",
-                    "SOC as a Service",
-                    "vCISO Services",
-                    "Digital Forensics",
-                    "Training & Awareness",
+                    { label: "GRC & Compliance", href: "/services/grc-compliance" },
+                    { label: "Offensive Security", href: "/services/offensive-security" },
+                    { label: "SOC as a Service", href: "/services/soc-as-a-service" },
+                    { label: "vCISO Services", href: "/services/vciso-services" },
+                    { label: "Digital Forensics", href: "/services/digital-forensics-ir" },
+                    { label: "Training & Awareness", href: "/services/training-awareness" },
                   ].map((s) => (
-                    <li key={s}>
-                      <a href="#" className="flex items-center gap-2 text-[13.5px] text-slate-400 transition-colors hover:text-electric">
-                        <span className="text-electric">»</span> {s}
+                    <li key={s.label}>
+                      <a href={s.href} className="flex items-center gap-2 text-[13.5px] text-slate-400 transition-colors hover:text-electric">
+                        <span className="text-electric">»</span> {s.label}
                       </a>
                     </li>
                   ))}
@@ -146,16 +146,16 @@ export default function Footer() {
                 </h3>
                 <ul className="mt-6 space-y-2.5">
                   {[
-                    "Red Teaming",
-                    "Security Audits",
-                    "Incident Response",
-                    "Compliance Audit",
-                    "Cloud Security",
-                    "Penetration Testing",
+                    { label: "Red Teaming", href: "/services/red-teaming" },
+                    { label: "Security Audits", href: "/services/security-audits" },
+                    { label: "Incident Response", href: "/services/incident-response" },
+                    { label: "Compliance Audit", href: "/services/compliance-audit" },
+                    { label: "Cloud Security", href: "/services/cloud-security" },
+                    { label: "Penetration Testing", href: "/services/penetration-testing" },
                   ].map((s) => (
-                    <li key={s}>
-                      <a href="#" className="flex items-center gap-2 text-[13.5px] text-slate-400 transition-colors hover:text-electric">
-                        <span className="text-electric">»</span> {s}
+                    <li key={s.label}>
+                      <a href={s.href} className="flex items-center gap-2 text-[13.5px] text-slate-400 transition-colors hover:text-electric">
+                        <span className="text-electric">»</span> {s.label}
                       </a>
                     </li>
                   ))}
@@ -168,10 +168,18 @@ export default function Footer() {
                   Industries We Serve
                 </h3>
                 <ul className="mt-6 space-y-2.5">
-                  {["BFSI", "Healthcare", "IT & Telecom", "E-commerce", "Manufacturing", "Government"].map((ind) => (
-                    <li key={ind}>
-                      <a href="#industries" className="flex items-center gap-2 text-[13.5px] text-slate-400 transition-colors hover:text-electric">
-                        <span className="text-electric">»</span> {ind}
+                  {[
+                    { label: "BFSI", href: "/industries/bfsi" },
+                    { label: "Healthcare", href: "/industries/healthcare" },
+                    { label: "IT & Telecom", href: "/industries/it-telecommunications" },
+                    { label: "E-commerce", href: "/industries/ecommerce" },
+                    { label: "Manufacturing", href: "/industries/manufacturing" },
+                    { label: "Government", href: "/industries/government-public-sector" },
+                    { label: "Food Industry", href: "/industries/food-industry" },
+                  ].map((ind) => (
+                    <li key={ind.label}>
+                      <a href={ind.href} className="flex items-center gap-2 text-[13.5px] text-slate-400 transition-colors hover:text-electric">
+                        <span className="text-electric">»</span> {ind.label}
                       </a>
                     </li>
                   ))}

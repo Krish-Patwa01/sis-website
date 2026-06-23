@@ -8,6 +8,7 @@ import AdvancedServices from "@/components/AdvancedServices";
 import WhyUs from "@/components/WhyUs";
 import FrameworksMarquee from "@/components/FrameworksMarquee";
 import Industries from "@/components/Industries";
+import Process from "@/components/Process";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -26,6 +27,7 @@ export default function Home() {
         <WhyUs />
         <FrameworksMarquee />
         <Industries />
+        <Process />
         <FAQ />
         <Contact />
       </main>

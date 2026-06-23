@@ -1,6 +1,5 @@
 import { Compass, Crosshair, Wrench, BadgeCheck, RefreshCcw } from "lucide-react";
 import Reveal from "./Reveal";
-import SectionHeading from "./SectionHeading";
 
 const steps = [
   {
@@ -43,15 +42,21 @@ export default function Process() {
       aria-label="Our process"
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <SectionHeading
-          kicker="Our Process"
-          title={
-            <>
+        <Reveal>
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="flex items-center justify-center gap-2 text-[13px] font-bold uppercase tracking-[0.12em] text-electric">
+              <span className="h-[2px] w-5 bg-electric" aria-hidden />
+              Our Process
+              <span className="h-[2px] w-5 bg-electric" aria-hidden />
+            </span>
+            <h2 className="mt-4 font-display text-[32px] font-bold leading-tight tracking-tight text-snow sm:text-[40px]">
               From First Audit to <span className="text-gradient">Always-On Resilience</span>
-            </>
-          }
-          description="A proven, repeatable engagement model that turns security from a checkbox into a continuous business advantage."
-        />
+            </h2>
+            <p className="mt-5 text-[16px] leading-relaxed text-mist">
+              A proven, repeatable engagement model that turns security from a checkbox into a continuous business advantage.
+            </p>
+          </div>
+        </Reveal>
 
         <ol className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
           {steps.map((s, i) => (

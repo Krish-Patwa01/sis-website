@@ -6,40 +6,46 @@ import Link from "next/link";
 import { Menu, X, ChevronsRight, Phone, Mail, Instagram, Linkedin, ChevronDown } from "lucide-react";
 
 const links = [
-  { label: "Home", href: "#" },
+  { label: "Home", href: "/" },
   {
     label: "Services",
-    href: "#services",
+    href: "/#services",
     submenu: [
-      { label: "GRC & Compliance", href: "#services" },
-      { label: "Offensive Security & Red Teaming", href: "#services" },
-      { label: "SOC as a Service", href: "#services" },
-      { label: "vCISO Services", href: "#services" },
-      { label: "Digital Forensics & IR", href: "#services" },
-      { label: "Training & Awareness", href: "#services" },
+      { label: "GRC & Compliance", href: "/services/grc-compliance" },
+      { label: "Offensive Security & Red Teaming", href: "/services/offensive-security" },
+      { label: "SOC as a Service", href: "/services/soc-as-a-service" },
+      { label: "vCISO Services", href: "/services/vciso-services" },
+      { label: "Digital Forensics & IR", href: "/services/digital-forensics-ir" },
+      { label: "Training & Awareness", href: "/services/training-awareness" },
+      { label: "Red Teaming", href: "/services/red-teaming" },
+      { label: "Penetration Testing", href: "/services/penetration-testing" },
+      { label: "Cloud Security", href: "/services/cloud-security" },
+      { label: "Security Audits", href: "/services/security-audits" },
+      { label: "Compliance Audit", href: "/services/compliance-audit" },
+      { label: "Incident Response", href: "/services/incident-response" },
     ],
   },
   {
     label: "Industries",
-    href: "#industries",
+    href: "/#industries",
     submenu: [
-      { label: "BFSI", href: "#industries" },
-      { label: "Healthcare", href: "#industries" },
-      { label: "IT & Telecommunications", href: "#industries" },
-      { label: "E-commerce", href: "#industries" },
-      { label: "Manufacturing", href: "#industries" },
-      { label: "Government & Public Sector", href: "#industries" },
-      { label: "Food Industry", href: "#industries" },
+      { label: "BFSI", href: "/industries/bfsi" },
+      { label: "Healthcare", href: "/industries/healthcare" },
+      { label: "IT & Telecommunications", href: "/industries/it-telecommunications" },
+      { label: "E-commerce", href: "/industries/ecommerce" },
+      { label: "Manufacturing", href: "/industries/manufacturing" },
+      { label: "Government & Public Sector", href: "/industries/government-public-sector" },
+      { label: "Food Industry", href: "/industries/food-industry" },
     ],
   },
   {
     label: "Company",
-    href: "#about",
+    href: "/#about",
     submenu: [
-      { label: "About", href: "#about" },
-      { label: "Why Us", href: "#why-us" },
-      { label: "Process", href: "#process" },
-      { label: "FAQ", href: "#faq" },
+      { label: "About", href: "/#about" },
+      { label: "Why Us", href: "/#why-us" },
+      { label: "Process", href: "/#process" },
+      { label: "FAQ", href: "/#faq" },
     ],
   },
 ];
@@ -115,7 +121,7 @@ export default function Navbar() {
       >
         <nav
           aria-label="Main navigation"
-          className="mx-auto flex h-[74px] max-w-7xl items-center justify-between px-5 lg:px-8"
+          className="mx-auto flex h-[90px] max-w-7xl items-center justify-between px-5 lg:px-8"
         >
           <Link href="#" aria-label="Shridhar InfoSec Solutions — home" className="flex items-center gap-3">
             <Image
@@ -124,7 +130,7 @@ export default function Navbar() {
               width={160}
               height={42}
               priority
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 
@@ -169,7 +175,7 @@ export default function Navbar() {
           </ul>
 
           <div className="hidden lg:block">
-            <a href="#contact" className="btn-primary !text-[14.5px]">
+            <a href="/#contact" className="btn-primary !text-[14.5px]">
               Get A Quote <ChevronsRight size={17} aria-hidden />
             </a>
           </div>
@@ -231,7 +237,7 @@ export default function Navbar() {
                 </li>
               ))}
               <li className="pt-2">
-                <a href="#contact" onClick={() => setOpen(false)} className="btn-primary w-full justify-center">
+                <a href="/#contact" onClick={() => setOpen(false)} className="btn-primary w-full justify-center">
                   Get A Quote <ChevronsRight size={17} aria-hidden />
                 </a>
               </li>

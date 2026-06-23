@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#122441] pt-[74px] lg:pt-[118px]" aria-label="Hero">
+    <section className="relative overflow-hidden bg-[#122441] pt-[90px] lg:pt-[134px]" aria-label="Hero">
       {/* Right-side photo (desktop) */}
       <div
         className="absolute inset-y-0 right-0 hidden w-[55%] lg:block"
