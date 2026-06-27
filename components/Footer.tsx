@@ -225,9 +225,6 @@ export default function Footer() {
                   <a href="mailto:info@shridharinfosec.com" className="block text-[13.5px] text-slate-400 transition-colors hover:text-electric">
                     info@shridharinfosec.com
                   </a>
-                  <a href="mailto:careers@shridharinfosec.com" className="block text-[13.5px] text-slate-400 transition-colors hover:text-electric">
-                    careers@shridharinfosec.com
-                  </a>
                 </div>
               </div>
             </div>

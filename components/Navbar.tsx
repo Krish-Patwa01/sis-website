@@ -3,7 +3,15 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, ChevronsRight, Phone, Mail, Instagram, Linkedin, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronsRight, Phone, Mail, Instagram, Linkedin, Facebook, ChevronDown } from "lucide-react";
+
+function MediumIcon({ size = 14 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42S20.96 8.46 20.96 12zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+    </svg>
+  );
+}
 
 const links = [
   { label: "Home", href: "/" },
@@ -84,9 +92,27 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-full items-center border-x border-white/10 px-4 transition-colors hover:bg-white/10"
+                className="flex h-full items-center border-l border-white/10 px-4 transition-colors hover:bg-white/10"
               >
                 <Linkedin size={14} />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61573446867142"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="flex h-full items-center border-l border-white/10 px-4 transition-colors hover:bg-white/10"
+              >
+                <Facebook size={14} />
+              </a>
+              <a
+                href="https://medium.com/@shridharinfosec"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Medium"
+                className="flex h-full items-center border-x border-white/10 px-4 transition-colors hover:bg-white/10"
+              >
+                <MediumIcon size={14} />
               </a>
             </div>
           </div>
@@ -95,19 +121,13 @@ export default function Navbar() {
               href="tel:+919328667642"
               className="flex items-center gap-2 border-l border-white/10 px-5 transition-colors hover:bg-white/10"
             >
-              <Phone size={14} className="text-electric" /> For Sales +91 932-866-7642
-            </a>
-            <a
-              href="mailto:info@shridharinfosec.com"
-              className="flex items-center gap-2 border-l border-white/10 px-5 transition-colors hover:bg-white/10"
-            >
-              <Mail size={14} className="text-electric" /> info@shridharinfosec.com
+              <Phone size={14} className="text-electric" /> Secure Your Organization: +91 932-866-7642
             </a>
             <a
               href="mailto:info@shridharinfosec.com"
               className="flex items-center gap-2 border-x border-white/10 px-5 transition-colors hover:bg-white/10"
             >
-              <Mail size={14} className="text-electric" /> careers@shridharinfosec.com
+              <Mail size={14} className="text-electric" /> info@shridharinfosec.com
             </a>
           </div>
         </div>
