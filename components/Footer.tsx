@@ -162,13 +162,13 @@ export default function Footer() {
                 </h3>
                 <ul className="mt-6 space-y-2.5">
                   {[
-                    { label: "BFSI", href: "/industries/bfsi" },
-                    { label: "Healthcare", href: "/industries/healthcare" },
                     { label: "IT & Telecom", href: "/industries/it-telecommunications" },
-                    { label: "E-commerce", href: "/industries/ecommerce" },
+                    { label: "Healthcare", href: "/industries/healthcare" },
                     { label: "Manufacturing", href: "/industries/manufacturing" },
-                    { label: "Government", href: "/industries/government-public-sector" },
+                    { label: "BFSI", href: "/industries/bfsi" },
+                    { label: "E-commerce", href: "/industries/ecommerce" },
                     { label: "Food Industry", href: "/industries/food-industry" },
+                    { label: "Government", href: "/industries/government-public-sector" },
                   ].map((ind) => (
                     <li key={ind.label}>
                       <a href={ind.href} className="flex items-center gap-2 text-[13.5px] text-slate-400 transition-colors hover:text-electric">

@@ -6,16 +6,19 @@ const cards = [
     icon: ScanSearch,
     title: "Security Assessments",
     text: "Risk-driven evaluation of your networks, applications and cloud — find the gaps before attackers do.",
+    href: "/services/security-audits",
   },
   {
     icon: MonitorCheck,
     title: "Threat Monitoring",
     text: "24/7 SOC as a Service with continuous detection, alerting and rapid incident response.",
+    href: "/services/soc-as-a-service",
   },
   {
     icon: ClipboardCheck,
     title: "Compliance Audit",
     text: "ISO, SOC 2, privacy and sector-specific audits that turn compliance into confidence.",
+    href: "/services/compliance-audit",
   },
 ];
 
@@ -33,7 +36,7 @@ export default function QuickCards() {
               <h3 className="mt-5 font-display text-[18px] font-bold text-snow">{c.title}</h3>
               <p className="mt-2.5 text-[13.5px] leading-relaxed text-mist">{c.text}</p>
               <a
-                href="#services"
+                href={c.href}
                 className="mt-4 inline-flex items-center gap-1 text-[13px] font-bold text-electric hover:underline"
               >
                 Read More <ChevronsRight size={15} aria-hidden />

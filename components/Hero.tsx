@@ -4,17 +4,20 @@ import Reveal from "./Reveal";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-[#122441] pt-[90px] lg:pt-[134px]" aria-label="Hero">
-      {/* Right-side photo (desktop) */}
+      {/* Right-side video (desktop) */}
       <div
         className="absolute inset-y-0 right-0 hidden w-[55%] lg:block"
         aria-hidden
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/hero-ceo.jpg"
-          alt=""
+        <video
+          src="/hero.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=80"
           className="h-full w-full object-cover"
-          style={{ objectPosition: "center 35%" }}
+          style={{ objectPosition: "98% 35%" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#122441]/55 via-transparent to-transparent" />
       </div>
@@ -79,12 +82,15 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        {/* Mobile image */}
+        {/* Mobile video */}
         <div className="relative -mx-5 lg:hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/hero-ceo.jpg"
-            alt="CEO portrait"
+          <video
+            src="/hero.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=80"
             className="h-56 w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#122441]/60 to-transparent" />

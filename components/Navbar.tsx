@@ -37,13 +37,23 @@ const links = [
     label: "Industries",
     href: "/#industries",
     submenu: [
-      { label: "BFSI", href: "/industries/bfsi" },
-      { label: "Healthcare", href: "/industries/healthcare" },
       { label: "IT & Telecommunications", href: "/industries/it-telecommunications" },
-      { label: "E-commerce", href: "/industries/ecommerce" },
+      { label: "Healthcare", href: "/industries/healthcare" },
       { label: "Manufacturing", href: "/industries/manufacturing" },
-      { label: "Government & Public Sector", href: "/industries/government-public-sector" },
+      { label: "BFSI", href: "/industries/bfsi" },
+      { label: "E-commerce", href: "/industries/ecommerce" },
       { label: "Food Industry", href: "/industries/food-industry" },
+      { label: "Government & Public Sector", href: "/industries/government-public-sector" },
+    ],
+  },
+  {
+    label: "Resources",
+    href: "/resources/blog",
+    submenu: [
+      { label: "Case Studies", href: "/resources/case-studies" },
+      { label: "White Papers", href: "/resources/whitepapers" },
+      { label: "News Flash", href: "/resources/news-flash" },
+      { label: "Blogs", href: "/resources/blog" },
     ],
   },
   {
@@ -51,6 +61,7 @@ const links = [
     href: "/#about",
     submenu: [
       { label: "About", href: "/#about" },
+      { label: "Team", href: "/team" },
       { label: "Why Us", href: "/#why-us" },
       { label: "Process", href: "/#process" },
       { label: "FAQ", href: "/#faq" },

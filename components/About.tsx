@@ -63,9 +63,10 @@ export default function About() {
             <div className="mt-12">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80"
-                alt="Security analyst reviewing systems"
+                src="/hero-ceo.jpg"
+                alt="Shridhar InfoSec Solutions leadership"
                 className="h-[420px] w-full object-cover lg:h-[480px]"
+                style={{ objectPosition: "center 25%" }}
               />
               <div className="h-2.5 w-3/4 bg-electric" aria-hidden />
             </div>
