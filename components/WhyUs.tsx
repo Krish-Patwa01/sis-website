@@ -25,8 +25,8 @@ const reasons = [
 ];
 
 const stats = [
-  { value: "500+", label: "Assessments Delivered" },
-  { value: "50+", label: "Certified Experts" },
+  { value: "150+", label: "Assessments Delivered" },
+  { value: "25+", label: "Certified Experts" },
   { value: "24/7", label: "Threat Monitoring" },
 ];
 

@@ -1,5 +1,13 @@
 import Image from "next/image";
-import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin, Facebook } from "lucide-react";
+
+function MediumIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42S20.96 8.46 20.96 12zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+    </svg>
+  );
+}
 
 export default function Footer() {
   return (
@@ -60,6 +68,8 @@ export default function Footer() {
                   {[
                     { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/shridharinfosec" },
                     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/shridhar-infosec/" },
+                    { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/profile.php?id=61573446867142" },
+                    { icon: MediumIcon, label: "Medium", href: "https://medium.com/@shridharinfosec" },
                   ].map((s) => (
                     <a
                       key={s.label}
@@ -98,24 +108,7 @@ export default function Footer() {
 
           {/* Main footer links */}
           <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8">
-            <div className="grid gap-12 lg:grid-cols-4">
-              {/* Working Time */}
-              <div>
-                <h4 className="font-display text-[13px] font-bold uppercase tracking-[0.14em] text-white">
-                  Working Time
-                </h4>
-                <div className="mt-6 space-y-2.5">
-                  <p className="flex items-center gap-2 text-[13.5px] text-slate-400">
-                    <span className="h-2 w-2 rounded-full bg-electric" aria-hidden />
-                    Mon - Fri / 9:30 AM - 6:30 PM
-                  </p>
-                  <p className="flex items-center gap-2 text-[13.5px] text-slate-400">
-                    <span className="h-2 w-2 rounded-full bg-slate-600" aria-hidden />
-                    Saturday - Sunday Closed
-                  </p>
-                </div>
-              </div>
-
+            <div className="grid gap-12 lg:grid-cols-3">
               {/* Our Services */}
               <nav aria-label="Services">
                 <h3 className="font-display text-[13px] font-bold uppercase tracking-[0.14em] text-white">
@@ -196,7 +189,7 @@ export default function Footer() {
               <div>
                 <div className="flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.1em] text-white">
                   <MapPin size={18} className="text-electric" aria-hidden />
-                  Office
+                  Head Office
                 </div>
                 <p className="mt-3 text-[13.5px] leading-relaxed text-slate-400">
                   B-338, Emerald One, Jetalpur Road, Vadodara, Gujarat, India - 390007
