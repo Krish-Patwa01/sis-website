@@ -3,9 +3,9 @@ import Reveal from "./Reveal";
 const industries = [
   {
     number: "01",
-    name: "BFSI",
-    text: "Our experts are involved in protecting sensitive financial data, customer information, and critical infrastructure from cyber threats. We deliver RBI, SEBI & IRDAI-aligned audits, SOC 2 compliance, and fully managed security programs tailored to banking, financial services and insurance sector requirements.",
-    image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80",
+    name: "IT & Telecommunications",
+    text: "Our service offerings enhance customer experience throughout secure & highly functional operations. We secure the infrastructure that powers digital business — networks, platforms, cloud environments and SaaS applications. From network security assessments to cloud penetration testing, we protect your digital backbone.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80",
   },
   {
     number: "02",
@@ -15,33 +15,33 @@ const industries = [
   },
   {
     number: "03",
-    name: "IT & Telecommunications",
-    text: "Our service offerings enhance customer experience throughout secure & highly functional operations. We secure the infrastructure that powers digital business — networks, platforms, cloud environments and SaaS applications. From network security assessments to cloud penetration testing, we protect your digital backbone.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    number: "04",
-    name: "E-commerce",
-    text: "Our cybersecurity experts focus on safeguarding production processes, industrial control systems, and sensitive data from cyber threats and unauthorized access. We provide payment security, application testing, PCI-DSS compliance, and privacy protection for online retail platforms operating at scale.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    number: "05",
     name: "Manufacturing",
     text: "Our service offerings enhance operational resilience throughout secure & highly functional industrial environments. Protecting OT/IT convergence, supply chains and intellectual property on the factory floor. We deliver OT security assessments, supply chain risk management, and industrial control system protection.",
     image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=80",
   },
   {
-    number: "06",
-    name: "Government & Public Sector",
-    text: "Our cybersecurity experts focus on protecting public sector infrastructure and citizen data with the highest standards. Compliance-first security for government agencies, public infrastructure, and citizen databases. We ensure adherence to national security standards while maintaining robust protection against threats.",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80",
+    number: "04",
+    name: "BFSI",
+    text: "Our experts are involved in protecting sensitive financial data, customer information, and critical infrastructure from cyber threats. We deliver RBI, SEBI & IRDAI-aligned audits, SOC 2 compliance, and fully managed security programs tailored to banking, financial services and insurance sector requirements.",
+    image: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=600&q=80",
   },
   {
-    number: "07",
+    number: "05",
+    name: "E-commerce",
+    text: "Our cybersecurity experts focus on safeguarding production processes, industrial control systems, and sensitive data from cyber threats and unauthorized access. We provide payment security, application testing, PCI-DSS compliance, and privacy protection for online retail platforms operating at scale.",
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    number: "06",
     name: "Food Industry",
     text: "Our service offerings enhance operational security throughout production & supply chain. Securing production systems, logistics platforms and enterprise applications end to end. We protect food production systems, supply chain visibility platforms, and ensure compliance with food safety and data protection regulations.",
     image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?auto=format&fit=crop&w=600&q=80",
+  },
+  {
+    number: "07",
+    name: "Government & Public Sector",
+    text: "Our cybersecurity experts focus on protecting public sector infrastructure and citizen data with the highest standards. Compliance-first security for government agencies, public infrastructure, and citizen databases. We ensure adherence to national security standards while maintaining robust protection against threats.",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80",
   },
 ];
 
