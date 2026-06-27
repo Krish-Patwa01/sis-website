@@ -123,7 +123,7 @@ export default function Navbar() {
           aria-label="Main navigation"
           className="mx-auto flex h-[90px] max-w-7xl items-center justify-between px-5 lg:px-8"
         >
-          <Link href="#" aria-label="Shridhar InfoSec Solutions — home" className="flex items-center gap-3">
+          <Link href="/" aria-label="Shridhar InfoSec Solutions — home" className="flex items-center gap-3">
             <Image
               src="/logo-dark.png"
               alt="Shridhar InfoSec Solutions logo"
