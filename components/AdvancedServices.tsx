@@ -6,21 +6,25 @@ const services = [
     icon: Target,
     title: "Red Teaming",
     text: "APT simulation that mimics real-world attackers to test your defense, detection and response end to end.",
+    href: "/services/red-teaming",
   },
   {
     icon: UsersRound,
     title: "Social Engineering",
     text: "Phishing, vishing and USB-drop campaigns that measure and strengthen your human firewall.",
+    href: "/services/offensive-security",
   },
   {
     icon: FileSearch,
     title: "Digital Forensics",
     text: "Incident investigation, root cause analysis and legal-grade chain of custody for devices, logs and email.",
+    href: "/services/digital-forensics-ir",
   },
   {
     icon: Siren,
     title: "Incident Response",
     text: "IR retainers, custom playbooks and post-incident reviews for rapid containment and recovery.",
+    href: "/services/incident-response",
   },
 ];
 
@@ -73,7 +77,7 @@ export default function AdvancedServices() {
                 <h3 className="mt-6 font-display text-[18px] font-bold text-snow">{s.title}</h3>
                 <p className="mt-3 text-[14px] leading-relaxed text-mist">{s.text}</p>
                 <a
-                  href="#contact"
+                  href={s.href}
                   className="mt-5 inline-flex items-center gap-1.5 text-[13px] font-bold text-electric transition-all hover:gap-2.5"
                 >
                   Read More <ChevronsRight size={16} aria-hidden />
