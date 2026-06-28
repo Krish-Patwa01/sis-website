@@ -16,7 +16,7 @@ const statCards = [
 
 export default function About() {
   return (
-    <section id="about" className="relative scroll-mt-24 overflow-hidden py-24 lg:py-28" aria-label="About us">
+    <section id="about" className="relative scroll-mt-24 overflow-hidden pt-12 pb-24 lg:pt-16 lg:pb-28" aria-label="About us">
       {/* Background squiggle decorations — talakunchi style */}
       <svg
         className="absolute right-[-60px] top-10 h-56 w-56 opacity-[0.12]"

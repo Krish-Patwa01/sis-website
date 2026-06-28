@@ -49,7 +49,7 @@ export default function Industries() {
   return (
     <section
       id="industries"
-      className="relative scroll-mt-20 overflow-hidden bg-white py-24 lg:py-32"
+      className="relative scroll-mt-20 overflow-hidden bg-white pt-12 pb-24 lg:pt-16 lg:pb-32"
       aria-label="Industries we serve"
     >
       <div className="mx-auto max-w-6xl px-5 lg:px-8">

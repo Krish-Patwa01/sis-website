@@ -32,7 +32,7 @@ const stats = [
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="relative scroll-mt-20 overflow-hidden py-24 lg:py-32" aria-label="Why choose us">
+    <section id="why-us" className="relative scroll-mt-20 overflow-hidden pt-12 pb-24 lg:pt-16 lg:pb-32" aria-label="Why choose us">
       <div className="orb left-[-140px] bottom-[5%] h-[380px] w-[380px] bg-violet-glow/10" aria-hidden />
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr]">

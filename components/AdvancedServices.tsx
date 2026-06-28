@@ -30,7 +30,7 @@ const services = [
 
 export default function AdvancedServices() {
   return (
-    <section className="relative overflow-hidden bg-white py-24 lg:py-32" aria-label="Advanced services">
+    <section className="relative overflow-hidden bg-white pt-12 pb-24 lg:pt-16 lg:pb-32" aria-label="Advanced services">
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         {/* Header section — two column */}
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">

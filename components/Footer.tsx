@@ -49,7 +49,7 @@ export default function Footer() {
         <div className="relative">
           {/* Top section with logo, mission, vision */}
           <div className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
-            <div className="grid gap-16 lg:grid-cols-[1fr_1fr_1fr]">
+            <div className="grid items-start gap-12 lg:grid-cols-3 lg:gap-14">
               {/* Brand & About */}
               <div>
                 <div className="inline-block rounded-lg bg-white px-4 py-2.5">
@@ -58,13 +58,13 @@ export default function Footer() {
                     alt="Shridhar InfoSec Solutions logo"
                     width={160}
                     height={42}
-                    className="h-9 w-auto"
+                    className="h-10 w-auto"
                   />
                 </div>
-                <p className="mt-8 text-[14px] leading-relaxed text-slate-300">
+                <p className="mt-6 text-[14px] leading-[1.8] text-slate-400">
                   Shridhar InfoSec Solutions delivers next-generation cybersecurity expertise across GRC, offensive security, and managed defense. From risk assessment to 24/7 monitoring, we protect organizations against evolving threats with certified specialists and practical, business-first solutions.
                 </p>
-                <div className="mt-8 flex gap-3">
+                <div className="mt-7 flex gap-3">
                   {[
                     { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/shridharinfosec" },
                     { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/shridhar-infosec/" },
@@ -88,7 +88,8 @@ export default function Footer() {
               {/* Our Mission */}
               <div>
                 <h3 className="font-display text-[16px] font-bold text-white">Our Mission</h3>
-                <p className="mt-4 text-[14px] leading-relaxed text-slate-400">
+                <span className="mt-3 block h-[2px] w-9 bg-electric" aria-hidden />
+                <p className="mt-4 text-[14px] leading-[1.8] text-slate-400">
                   To empower organizations with world-class cybersecurity solutions that simplify complexity, reduce risk, and enable confident digital transformation through innovation and expert guidance.
                 </p>
               </div>
@@ -96,7 +97,8 @@ export default function Footer() {
               {/* Our Vision */}
               <div>
                 <h3 className="font-display text-[16px] font-bold text-white">Our Vision</h3>
-                <p className="mt-4 text-[14px] leading-relaxed text-slate-400">
+                <span className="mt-3 block h-[2px] w-9 bg-electric" aria-hidden />
+                <p className="mt-4 text-[14px] leading-[1.8] text-slate-400">
                   To be recognized as the trusted cybersecurity partner that enterprises turn to for defending digital assets, securing critical infrastructure, and building resilient security cultures.
                 </p>
               </div>

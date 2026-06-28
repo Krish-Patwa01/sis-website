@@ -38,7 +38,7 @@ export default function Process() {
   return (
     <section
       id="process"
-      className="relative scroll-mt-20 border-y border-line bg-night/40 py-24 lg:py-32"
+      className="relative scroll-mt-20 border-y border-line bg-night/40 pt-12 pb-24 lg:pt-16 lg:pb-32"
       aria-label="Our process"
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
