@@ -57,7 +57,7 @@ export default function WhyUs() {
 
             {/* Trust stats strip */}
             <Reveal delay={150}>
-              <div className="mt-9 flex gap-8 border-y border-line/60 py-6">
+              <div className="mt-9 flex flex-wrap gap-x-6 gap-y-4 border-y border-line/60 py-6 sm:gap-x-8">
                 {stats.map((s) => (
                   <div key={s.label}>
                     <div className="font-display text-[28px] font-bold text-electric">{s.value}</div>
