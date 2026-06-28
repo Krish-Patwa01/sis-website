@@ -15,6 +15,7 @@ export default function Hero() {
           muted
           loop
           playsInline
+          preload="auto"
           poster="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=80"
           className="h-full w-full object-cover"
           style={{ objectPosition: "98% 35%" }}
