@@ -23,6 +23,18 @@ export async function generateMetadata({
   return {
     title: `${service.name} | Shridhar InfoSec Solutions`,
     description: service.tagline,
+    keywords: [
+      ...new Set([
+        service.name,
+        service.shortName,
+        `${service.shortName} services`,
+        `${service.shortName} company`,
+        "cybersecurity",
+        "Shridhar InfoSec Solutions",
+        "SIS",
+      ]),
+    ],
+    alternates: { canonical: `/services/${service.slug}` },
   };
 }
 

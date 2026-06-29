@@ -22,6 +22,8 @@ export async function generateMetadata({
   return {
     title: `${resource.name} | Shridhar InfoSec Solutions`,
     description: resource.tagline,
+    keywords: [resource.name, `cybersecurity ${resource.name.toLowerCase()}`, "Shridhar InfoSec Solutions", "SIS"],
+    alternates: { canonical: `/resources/${resource.slug}` },
   };
 }
 

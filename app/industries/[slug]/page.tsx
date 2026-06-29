@@ -23,6 +23,16 @@ export async function generateMetadata({
   return {
     title: `${industry.name} Cybersecurity | Shridhar InfoSec Solutions`,
     description: industry.tagline,
+    keywords: [
+      `${industry.name} cybersecurity`,
+      `${industry.shortName} security`,
+      `cybersecurity for ${industry.shortName}`,
+      `${industry.shortName} compliance`,
+      "cybersecurity",
+      "Shridhar InfoSec Solutions",
+      "SIS",
+    ],
+    alternates: { canonical: `/industries/${industry.slug}` },
   };
 }
 

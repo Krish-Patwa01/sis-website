@@ -50,6 +50,7 @@ export const metadata: Metadata = {
     description:
       "GRC & compliance, offensive security & red teaming, SOC as a Service, vCISO and security training for the digital-first enterprise.",
   },
+  alternates: { canonical: "/" },
   robots: { index: true, follow: true },
 };
 

@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   title: "Our Team | Shridhar InfoSec Solutions",
   description:
     "Meet the leadership, advisors and specialists behind Shridhar InfoSec Solutions — the people defending your data and securing your success.",
+  keywords: [
+    "Shridhar InfoSec team",
+    "SIS leadership",
+    "Vedant Patwa",
+    "cybersecurity team Vadodara",
+    "Shridhar InfoSec Solutions",
+  ],
+  alternates: { canonical: "/team" },
 };
 
 type Member = { name: string; role: string; image: string; bio: string[]; linkedin?: string };
