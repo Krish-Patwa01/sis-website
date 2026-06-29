@@ -16,7 +16,7 @@ const grotesk = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.shridharinfosec.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.shridharinfosec.com"),
   title: "Shridhar InfoSec Solutions | Next-Gen Cybersecurity, GRC & Red Teaming",
   description:
     "Shridhar InfoSec Solutions is a next-generation cybersecurity firm delivering GRC & compliance, offensive security & red teaming, SOC as a Service, vCISO, digital forensics and security training — defending your data, securing your success.",
